@@ -18,7 +18,10 @@ function _draw()
  if btn(5) then
  
  	spr(5, p1.x, p1.y)
-  if (p1.x + 9 > p2.x) then
+  if (p1.x + 9 > p2.x and 
+      p1.x < p2.x + 9 and
+      p1.y + 4 > p2.y and
+      p1.y < p2.y + 9) then
   	spr(26, p2.x, p2.y)
   	return
   end
@@ -26,7 +29,10 @@ function _draw()
  elseif btn(4) then
  	spr(6, p1.x, p1.y)
  	
- 	if (p1.x + 9 > p2.x) then
+  if (p1.x + 9 > p2.x and 
+      p1.x < p2.x + 9 and
+      p1.y + 4 > p2.y and
+      p1.y < p2.y + 9) then
   	spr(26, p2.x, p2.y)
   	return
   end
